@@ -103,9 +103,42 @@
     // } else {
     //     echo "It's not twenty"; // false;
     // }
+    ## switch in php
+    
+    switch ("red") {
+        case 'green':
+            echo 'my favorite color is red';
+            break;
+        case 'blue':
+            echo 'my favorite color is also red' . '<br >';
+            break;
+        default:
+            echo 'I have not favorite color' . '<br >';
+            break;
+    }
+
+    ## // php loop
+    // while loop
+    $wl = 1;
+    // while ($wl <= 10) {
+    //     echo 'this is' . $wl . '<br>';
+    //     $wl++;
+    // }
+    // do while loop
+    $dl = 1;
+    // do {
+    //     echo 'this is ' . $dl . '<br>';
+    //     $dl++;
+    // } while ($dl <= 10);
+    
+    //  for loop
+    // for($fl = 1; $fl <=10; $fl++){
+    //     echo 'this is for fl ' . $fl . '<br>';
+    // }
+
+    ## date format
+    echo date('Y-m-d H:i:s');
 
     ?>
 </body>
-
-
 </html>
