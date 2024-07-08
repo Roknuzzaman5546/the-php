@@ -135,10 +135,33 @@
     // for($fl = 1; $fl <=10; $fl++){
     //     echo 'this is for fl ' . $fl . '<br>';
     // }
-
+    
     ## date format
     echo date('Y-m-d H:i:s');
 
+    ##// class constructor 
+    class Car
+    {
+        public $color;
+        function __construct($color)
+        {
+            $this->color = $color;
+            echo "this car is " . $this->color . "<br>";
+        }
+        function carInfo($fcolor)
+        {
+            $this->color = $fcolor;
+            echo "this car is " . $this->color . "<br>";
+        }
+    }
+    $bmw = new Car("");
+    echo $bmw->carInfo('red');
+    // echo($bmw->carInfo())     ;
+    $mercedes = new Car("");
+    echo $mercedes->carInfo("blue");
+    // var_dump($bmw);
+    
     ?>
 </body>
+
 </html>
