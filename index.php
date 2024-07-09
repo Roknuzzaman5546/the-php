@@ -21,10 +21,10 @@
     $name = 'rased';
     $age1 = 30;
     $name = 'bulbul';
-    var_dump($age1);
-    var_dump($age);
-    var_dump($name);
-
+    // var_dump($age1);
+    // var_dump($age);
+    // var_dump($name);
+    
     // class of php
     class Phone
     {
@@ -33,7 +33,7 @@
         {
             global $device;
             $device = $number;
-            echo "this is a $device <br>";
+            // echo "this is a $device <br>";
         }
     }
     ## // class define
@@ -56,17 +56,17 @@
         'nokia',
         'oneplus'
     ]);
-    echo (phones[2]);
+    // echo (phones[2]);
     // var_dump(phones);
     ## // php function on const variable
     function test()
     {
-        echo (phones[1]);
+        // echo (phones[1]);
     }
     ;
     test();
-    echo $x + $y . '<br>';
-
+    // echo $x + $y . '<br>';
+    
     ##// php comparison operator
     // $xx = 50;
     // $yy = 50;
@@ -107,13 +107,13 @@
     
     switch ("red") {
         case 'green':
-            echo 'my favorite color is red';
+            // echo 'my favorite color is red';
             break;
         case 'blue':
-            echo 'my favorite color is also red' . '<br >';
+            // echo 'my favorite color is also red' . '<br >';
             break;
         default:
-            echo 'I have not favorite color' . '<br >';
+            // echo 'I have not favorite color' . '<br >';
             break;
     }
 
@@ -137,8 +137,8 @@
     // }
     
     ## date format
-    echo date('Y-m-d H:i:s');
-
+    // echo date('Y-m-d H:i:s');
+    
     ##// class constructor 
     class Car
     {
@@ -146,21 +146,36 @@
         function __construct($color)
         {
             $this->color = $color;
-            echo "this car is " . $this->color . "<br>";
+            // echo "this car is " . $this->color . "<br>";
         }
         function carInfo($fcolor)
         {
             $this->color = $fcolor;
-            echo "this car is " . $this->color . "<br>";
+            // echo "this car is " . $this->color . "<br>";
         }
     }
     $bmw = new Car("");
-    echo $bmw->carInfo('red');
+    // echo $bmw->carInfo('red');
     // echo($bmw->carInfo())     ;
     $mercedes = new Car("");
-    echo $mercedes->carInfo("blue");
+    // echo $mercedes->carInfo("blue");
     // var_dump($bmw);
     
+    // oop trait
+    
+    trait Bank
+    {
+        public function deposit($amount)
+        {
+            echo "depositing into bank";
+        }
+        public function withdraw($amount)
+        {
+            echo "withdrawing $amount";
+        }
+    }
+
+
     ?>
 </body>
 
