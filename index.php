@@ -45,9 +45,9 @@
     // echo (phones[2]);
     // var_dump(phones);
     // echo $x + $y . '<br>';
-
-
     
+
+
     ##// php comparison operator
     // $xx = 50;
     // $yy = 50;
@@ -60,11 +60,11 @@
     // $xx = 500;
     // $yy = 50;
     // echo($xx > $yy);    
-
+    
 
 
     ## // Php if else statements
-
+    
     $date = date('H');
 
     // if ($date == 20) {
@@ -87,10 +87,10 @@
     // } else {
     //     echo "It's not twenty"; // false;
     // }
-
+    
 
     ## switch in php
-
+    
     // switch ("red") {
     //     case 'green':
     //         echo 'my favorite color is red';
@@ -102,7 +102,7 @@
     //         echo 'I have not favorite color' . '<br >';
     //         break;
     // }
-
+    
 
     ###// Loop in php
     
@@ -112,32 +112,65 @@
     //     // echo "The number is: $i <br>";
     //     $i++;
     // }
-
+    
     // for Loop
     // for ($i = 1; $i <= 50; $i++) {
     //     echo  $i. ":- Sumaiya I am Sorry Tumi Sobtheke Valo Student"."<br>";
     // }
-
+    
 
     ### // Function in php
-    function greetUser($name, $age){
+    function greetUser($name, $age)
+    {
         echo "hello $name, you are $age years old.<br>";
     }
 
     // greetUser('Roknuzzaman', 25);
-
+    
 
     // Function with return value
-    function addNumbers($a, $b) {
+    function addNumbers($a, $b)
+    {
         return $a + $b;
     }
 
     $result = addNumbers(5, 10);
     // echo "The sum is: $result<br>";
-
-    ## Array in php
-    $fruits = array("apple", "banana", "orange");
     
+    ## Array in php
+    
+    // index array
+    $fruits = array("apple", "banana", "orange");
+    echo "My favorite fruit is: " . $fruits[0] . "<br>";
+
+    // Associative array
+    $user = [
+        "name" => "Roknuzzaman",
+        "age" => 25,
+        "email" => "rokon@gmail.com"
+    ];
+    // echo $user["name"];
+    
+    foreach ($user as $key => $value) {
+        echo "$key: $value" . "<br>";
+    }
+
+    // Multidimensional array
+    $students = [
+        [
+            "name" => "Roknuzzaman",
+            "age" => 25,
+            "email" => "rokon@gmail.com"
+        ],
+        [
+            "name" => "sajib",
+            "age" => 25,
+            "email" => "sajib@gmail.com"
+        ]
+    ];
+    foreach ($students as $student) {
+        echo "Name: " . $student["name"] . ", Marks: " . $student["email"] . "<br>";
+    }
 
     ?>
 </body>
