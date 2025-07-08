@@ -14,11 +14,6 @@
 
 
 
-    /*
-    roknuzzaman
-     roknuZzaman
-     roknu_zzaman
-     */
     ## // variables declear and var_dump check 
     
     // $age = 20.5;
@@ -49,17 +44,9 @@
 
     // echo (phones[2]);
     // var_dump(phones);
-    ## // php function on const variable
-    
-    function test()
-    {
-        // echo (phones[1]);
-    }
-    ;
-
-    test();
-
     // echo $x + $y . '<br>';
+
+
     
     ##// php comparison operator
     // $xx = 50;
@@ -73,8 +60,10 @@
     // $xx = 500;
     // $yy = 50;
     // echo($xx > $yy);    
+
+
+
     ## // Php if else statements
-    
 
     $date = date('H');
 
@@ -98,34 +87,58 @@
     // } else {
     //     echo "It's not twenty"; // false;
     // }
+
+
     ## switch in php
-    
 
-    switch ("red") {
-        case 'green':
-            echo 'my favorite color is red';
-            break;
-        case 'blue':
-            echo 'my favorite color is also red' . '<br >';
-            break;
-        default:
-            echo 'I have not favorite color' . '<br >';
-            break;
-    }
+    // switch ("red") {
+    //     case 'green':
+    //         echo 'my favorite color is red';
+    //         break;
+    //     case 'blue':
+    //         echo 'my favorite color is also red' . '<br >';
+    //         break;
+    //     default:
+    //         echo 'I have not favorite color' . '<br >';
+    //         break;
+    // }
 
-    // Loop in php
+
+    ###// Loop in php
     
     // while Loop
-    $i = 0;
-    while ($i <= 10) {
-        // echo "The number is: $i <br>";
-        $i++;
-    }
+    // $i = 0;
+    // while ($i <= 10) {
+    //     // echo "The number is: $i <br>";
+    //     $i++;
+    // }
 
     // for Loop
-    for ($i = 1; $i <= 50; $i++) {
-        echo  $i. ":- Sumaiya I am Sorry Tumi Sobtheke Valo Student"."<br>";
+    // for ($i = 1; $i <= 50; $i++) {
+    //     echo  $i. ":- Sumaiya I am Sorry Tumi Sobtheke Valo Student"."<br>";
+    // }
+
+
+    ### // Function in php
+    function greetUser($name, $age){
+        echo "hello $name, you are $age years old.<br>";
     }
+
+    // greetUser('Roknuzzaman', 25);
+
+
+    // Function with return value
+    function addNumbers($a, $b) {
+        return $a + $b;
+    }
+
+    $result = addNumbers(5, 10);
+    // echo "The sum is: $result<br>";
+
+    ## Array in php
+    $fruits = array("apple", "banana", "orange");
+    
+
     ?>
 </body>
 
